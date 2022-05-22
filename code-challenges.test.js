@@ -139,37 +139,98 @@ const randomNouns2 = ["temperature", "database", "chopsticks", "mango", "deducti
 
 // b) Create the function that makes the test pass.
 
-		// create a function named caps
-		// use a split to separate the strings in the array(objects)
-		// use toUpperCase to capitalize the first of ever string youll get
-		// use .join to join them back together
-		// return the outcome
+		// create  function called caps
+		// create  variable within the function called capitals
+		// In the variable use .map to map out the values of the array 
+		// return with a value of the index at 0 and with .toUpperCase to capitalize the letter in that index
+		// follow by a + value.substring() to label from where the string is going to be added to it so we use 1
+		//  return with the variable capitals
 
 		const caps = (first) => {
-			let grammar = first.map(value => {
-		    return value[0].toUpperCase() + value.toString(1).join()
-		    })
+    	let capitals = first.map(value => {
+        return value[0].toUpperCase() + value.substring(1)
+    })
+   
+    return capitals
+}
+
+// test passed
+// 	 PASS  ./code-challenges.test.js
+//   number
+//     ✓ will return if a number is divisible by 3 (2 ms)
+//   caps
+//     ✓ Outputs each string with the first letter capitalized (1 ms)
+
+// Test Suites: 1 passed, 1 total
+// Tests:       2 passed, 2 total
+// Snapshots:   0 total
+// Time:        0.275 s, estimated 1 s
 
 
-		  return grammar.split("")
+// refactor
 
-		}
+	// I need help with learning how to refactor. Everything I keep fidning is about the same as those links I sent above.
+
+// ________________________end q2_____________________________
+		
 		
 
 
-
-
+// _________________________q3_________________________________
 
 // --------------------3) Create a function that takes in a string and logs the index of the first vowel.
 
+	
+
+
 // a) Create a test with expect statements for each of the variables provided.
+	
+	//  make a describe it function with and expect of the outcome being the first vowel in each string.
 
-const vowelTester1 = "learn"
-// Expected output: 1
-const vowelTester2 = "academy"
-// Expected output: 0
-const vowelTester3 = "challenges"
-// Expected output: 2
+// 		describe("string", () => {
+// 			it("each variables string will output the index of the first vowel", () => {
+// 				expect(string(vowelTester1)).toEqual(1)
+// 				expect(string(vowelTester2)).toEqual(0)
+// 				expect(string(vowelTester3)).toEqual(2)
+
+// 			})
+// 		})
+
+// // I failed yet again.
+// 	 // ● string › each variables string will output the index of the first vowel
+
+//   //   ReferenceError: string is not defined
 
 
-// b) Create the function that makes the test pass.
+
+// const vowelTester1 = "learn"
+// // Expected output: 1
+// const vowelTester2 = "academy"
+// // Expected output: 0
+// const vowelTester3 = "challenges"
+// // Expected output: 2
+
+
+// // b) Create the function that makes the test pass.
+
+// 	// create a function called string 
+// 	// 
+
+
+// 	const string = (vowel) => {
+// 		for(let i = 0; i < vowel.length; i++)
+// 			if(vowel.charAt(i) === "e" || vowel.charAt(i) === "a"){
+// 				vowel += 1
+// 			}
+// 	}
+// 				return string.indexOf()
+
+
+
+
+
+
+
+
+
+
