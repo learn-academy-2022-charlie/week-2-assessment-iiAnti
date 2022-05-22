@@ -12,6 +12,12 @@
 
 // --------------------INSTRUCTOR EXAMPLE: Create a function that takes in an array of numbers and returns an array with all the numbers multipled by 3.
 
+
+
+// ______________________q1_______________________________________
+
+
+
 // a) Create a test with expect statements for each of the variables provided.
 
 const numbersArray1 = [6, 7, 8, 9, 10]
@@ -24,9 +30,26 @@ const numbersArray2 = [24, 27, 30, 33, 36]
 
 
 
-// --------------------1) Create a function that takes a number as an argument and decides if the number is evenly divisble by three or not.
+// --------------------1) Create a function that takes a number as an argument and decides if the number is evenly divisible by three or not.
 
 // a) Create a test with expect statements for each of the variables provided.
+
+
+	// create a describe it with the outcome of expect for the given variables num1 num2 num3
+
+		describe("number", () => {
+			it("will return if a number is divisible by 3", () => {
+				expect(number(num1)).toEqual("15 is divisible by 3")
+				expect(number(num2)).toEqual("0 is divisible by 3")
+				expect(number(num3)).toEqual("-7 is not divisible by 3")
+			})
+		})
+
+//  ● number › will return if a number is divisible by 3
+
+    // ReferenceError: number is not defined
+
+// I failed the test. (this is the only time I've ever been happy about failing something)
 
 const num1 = 15
 // Expected output: "15 is divisible by three"
@@ -37,12 +60,76 @@ const num3 = -7
 
 
 // b) Create the function that makes the test pass.
+	// create a function called number
+	// make a condition with if
+	// conditions should be met with a % 3
+	//  follow by a return string with iteration
+	 //follow by an else for the numbers not divisible by 3 
 
+		const number = (odd) => {
+			if(odd % 3  === 0){
+				return `${odd} is divisible by 3`
+			} else{
+				return`${odd} is not divisible by 3`
+			}
+		}
+
+		// I passed 
+
+// 		 PASS  ./code-challenges.test.js
+//   number
+//     ✓ will return if a number is divisible by 3 (3 ms)
+
+// Test Suites: 1 passed, 1 total
+// Tests:       1 passed, 1 total
+// Snapshots:   0 total
+// Time:        0.298 s, estimated 1 s
+ 
+ //  Refactor 
+
+		//  I cannot find a way to refactor this. I've looked up pages but am a little confused with what they mean 
+
+		// https://www.geeksforgeeks.org/7-code-refactoring-techniques-in-software-engineering/
+
+		// https://betterprogramming.pub/the-art-of-refactoring-5-tips-to-write-better-code-3bc1f6f7689
+
+		// i believe I have a clean code. 	
+
+		//  i even tried looking this up in google 
+			// how to code two returns in one javascript
+			// and got this 
+				// Summary
+			// JavaScript doesn't support functions that return multiple values. However, you can wrap multiple values into an array or an object and return the array or the object.
+			// Use destructuring assignment syntax to unpack values from the array, or properties from objects.
+
+
+
+// ________________________end q1________________________________
+
+
+
+// ________________________q2____________________________________
 
 
 // --------------------2) Create a function that takes in an array of words and returns an array with all the words capitalized.
 
 // a) Create a test with expect statements for each of the variables provided.
+
+	// make a describe it with the expected outcome of ever first letter of the strings in the array to be capitalized.
+
+		describe("caps",() => {
+			it("Outputs each string with the first letter capitalized", () => {
+				expect(caps(randomNouns1)).toEqual(["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"])
+				expect(caps(randomNouns2)).toEqual(["Temperature", "Database", "Chopsticks", "Mango", "Deduction"])
+			})
+		})
+
+		// I failed again! Yassss 
+		  // ● caps › Outputs each string with the first letter capitalized
+
+    // ReferenceError: caps is not defined
+
+
 
 const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
 // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
@@ -51,6 +138,25 @@ const randomNouns2 = ["temperature", "database", "chopsticks", "mango", "deducti
 
 
 // b) Create the function that makes the test pass.
+
+		// create a function named caps
+		// use a split to separate the strings in the array(objects)
+		// use toUpperCase to capitalize the first of ever string youll get
+		// use .join to join them back together
+		// return the outcome
+
+		const caps = (first) => {
+			let grammar = first.map(value => {
+		    return value[0].toUpperCase() + value.toString(1).join()
+		    })
+
+
+		  return grammar.split("")
+
+		}
+		
+
+
 
 
 
