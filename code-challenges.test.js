@@ -169,7 +169,17 @@ const randomNouns2 = ["temperature", "database", "chopsticks", "mango", "deducti
 
 // refactor
 
-	// I need help with learning how to refactor. Everything I keep fidning is about the same as those links I sent above.
+	// I need help with learning how to refactor. Everything I keep finding is about the same as those links I sent above.
+	// but I hope this is good.
+
+				// 	const caps = first => {
+    // 	let capitals = first.map(value => value[0].toUpperCase() + value.substring(1)
+    // }
+   
+    // return capitals
+
+    // I tried this, but it didn't work. I couldn't get the return capitals to work else where.
+
 
 // ________________________end q2_____________________________
 		
@@ -187,45 +197,50 @@ const randomNouns2 = ["temperature", "database", "chopsticks", "mango", "deducti
 	
 	//  make a describe it function with and expect of the outcome being the first vowel in each string.
 
-// 		describe("string", () => {
-// 			it("each variables string will output the index of the first vowel", () => {
-// 				expect(string(vowelTester1)).toEqual(1)
-// 				expect(string(vowelTester2)).toEqual(0)
-// 				expect(string(vowelTester3)).toEqual(2)
+		describe("string", () => {
+			it("each variables string will output the index of the first vowel", () => {
+				expect(string(vowelTester1)).toEqual(1)
+				expect(string(vowelTester2)).toEqual(0)
+				expect(string(vowelTester3)).toEqual(2)
 
-// 			})
-// 		})
+			})
+		})
 
-// // I failed yet again.
-// 	 // ● string › each variables string will output the index of the first vowel
+// // // I failed yet again.
+// // 	 // ● string › each variables string will output the index of the first vowel
 
-//   //   ReferenceError: string is not defined
-
-
-
-// const vowelTester1 = "learn"
-// // Expected output: 1
-// const vowelTester2 = "academy"
-// // Expected output: 0
-// const vowelTester3 = "challenges"
-// // Expected output: 2
+// //   //   ReferenceError: string is not defined
 
 
-// // b) Create the function that makes the test pass.
 
-// 	// create a function called string 
-// 	// 
-
-
-// 	const string = (vowel) => {
-// 		for(let i = 0; i < vowel.length; i++)
-// 			if(vowel.charAt(i) === "e" || vowel.charAt(i) === "a"){
-// 				vowel += 1
-// 			}
-// 	}
-// 				return string.indexOf()
+const vowelTester1 = "learn"
+// // // Expected output: 1
+const vowelTester2 = "academy"
+// // // Expected output: 0
+const vowelTester3 = "challenges"
+// // // Expected output: 2
 
 
+// // // b) Create the function that makes the test pass.
+
+// // 	// create a function called string 
+// // 	// 
+
+
+	// const string = (vowel) => {
+	// 	for(let i = 0; i < vowel.length; i++)
+	// 		if(vowel.charAt(i) === "e" || vowel.charAt(i) === "a"){
+	// 			vowel += 1
+	// 		}
+	// }
+	// 			return string.indexOf()
+
+			const string = (vowel) => {
+				let firstOnes = vowel.search(/[a,e,i,o,u]/);{
+					return firstOnes
+				}
+			}
+				
 
 
 
