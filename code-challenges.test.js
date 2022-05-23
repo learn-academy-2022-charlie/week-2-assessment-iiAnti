@@ -223,17 +223,15 @@ const vowelTester3 = "challenges"
 
 // // // b) Create the function that makes the test pass.
 
-// // 	// create a function called string 
-// // 	// 
+	// create a function called string.
+	// add a variable named firstOnes
+	//  the variable will equal vowel.search
+	//  the search helps us look for a string we give it
+	//  now we inpput the vowel within an array of letters
+	// return the outcome
 
 
-	// const string = (vowel) => {
-	// 	for(let i = 0; i < vowel.length; i++)
-	// 		if(vowel.charAt(i) === "e" || vowel.charAt(i) === "a"){
-	// 			vowel += 1
-	// 		}
-	// }
-	// 			return string.indexOf()
+	
 
 			const string = (vowel) => {
 				let firstOnes = vowel.search(/[a,e,i,o,u]/);{
@@ -243,8 +241,29 @@ const vowelTester3 = "challenges"
 				
 
 
+// I passed
+//   PASS  ./code-challenges.test.js
+//   number
+//     ✓ will return if a number is divisible by 3 (3 ms)
+//   caps
+//     ✓ Outputs each string with the first letter capitalized (4 ms)
+//   string
+//     ✓ each variables string will output the index of the first vowel
 
+// Test Suites: 1 passed, 1 total
+// Tests:       3 passed, 3 total
+// Snapshots:   0 total
+// Time:        0.285 s, estimated 1 s
 
+// Im not sure how the code in the () works really besides that it is in [ ] which usually means the index of something. i tried searching why the /  / have to be there but I can't find much. my best answer was youtube but it was not a good explanation. I did have this equation before but I couldn't solve it. could you help me what I was missing?
+
+	// const string = (vowel) => {
+	// 	for(let i = 0; i < vowel.length; i++)
+	// 		if(vowel.charAt(i) === "e" || vowel.charAt(i) === "a"){
+	// 			vowel += 1
+	// 		}
+	// }
+	// 			return string.indexOf()
 
 
 
